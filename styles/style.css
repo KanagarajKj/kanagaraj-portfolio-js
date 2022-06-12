@@ -49,6 +49,17 @@ body {
     box-shadow: 0 5px 5px var(--Background-color);
 }
 
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav_left img {
+  width: 2.5rem;
+  border-radius: 50px;
+}
+
 .navbar h2 a{
     color: var(--Text-color);
     letter-spacing: 1px;
@@ -68,6 +79,7 @@ body {
     background-color: var(--Text-color);
     border-radius: 3px;
     position: relative;
+    transition: 0.2s;
 }
 
 .btn.active .menu_btn:nth-child(2){
@@ -85,19 +97,20 @@ body {
 .menu {
     cursor: pointer;
     position: fixed;
-    top: 5rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    top: 4rem;
     left: 101%;
-    background-color: white;
     padding: 1rem 0;
     transition: 1s;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .menu.view{
-    left: 0;
+  left: 0;
 }
+
 
 .menu ul li{
     margin-bottom: 1.5rem;
@@ -251,12 +264,13 @@ margin-bottom: 3rem;
 
 .slider {
   width: 95%;
+  margin: auto;
   height: 20rem;
   max-height: 30rem;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 2rem;
-  box-shadow: 5px 5px 10px raba(0,0,0,0.2);
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
 }
 
 .slides {
@@ -429,6 +443,9 @@ margin-bottom: 3rem;
 .form {
   width: 90%;
   margin: auto;
+  box-shadow: 2px 2px 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .form_control {
@@ -597,12 +614,138 @@ input[type = "submit"]{
   margin-bottom: 2rem;
 }
 
+.footer_links p{
+  font-size:1.2rem;
+  margin-bottom: 0.3rem;
+}
+
 .copy_right small{
   padding-bottom: 1.5rem;
+}
+
+.copy_right span {
+  font-size: 1.3rem;
+  font-weight: 900;
 }
 
 
 .copy_right a{
   text-decoration: underline;
   color: var(--white-color);
+}
+
+@media only screen and (min-width:768px){
+  .btn{
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;top: 1.8rem;
+    text-align: right;
+    background-color: transparent;
+    width: 100%;
+   display: flex;
+   justify-content: right;
+   padding: 0 2rem;
+  }
+
+  .menu .menu_list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu_list li {
+    padding: 0 0.8rem;
+    width: max-content;
+  }
+
+/* About Me */
+
+.about_me .title {
+  font-size: 1.6rem;
+}
+
+.about_me_description {
+  width: 70%;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+  .about_me_section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .know_me {
+    width: 55%;
+  }
+
+  .know_me p {
+    font-size: 1.3rem;
+    padding: 0 10rem;
+  }
+
+  .know_me h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .my_skill {
+    width: 45%;
+  }
+
+  .my_skill h2{
+  font-size: 1.7rem;
+  }
+
+  .skills li {
+    font-size: 1.2rem;
+  }
+
+.form {
+  width: 50%;
+  margin: auto;
+}
+
+} 
+
+@media screen and (min-width:1440px){
+
+.header_title{
+  font-size: 3rem;
+}
+
+.header_description{
+  padding: 0 23rem;
+}
+
+.form {
+  width: 30%;
+  margin: auto;
+}
+
+.slider {
+  width: 50%;
+  margin: auto;
+}
+
+.navigation_manual{
+  width: 50%;
+  margin: auto;
+  margin-top: -4rem;
+}
+
+.navigation_auto {
+  width: 50%;
+  margin: auto;
+  margin-top: 21rem;
+}
+
+.btn_project {
+  margin-top: 3.5rem;
+}
+
 }

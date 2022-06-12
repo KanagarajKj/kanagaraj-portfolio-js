@@ -34,7 +34,7 @@ setInterval(() => {
 
 },9000)
 
-form.addEventListener('submit',(e)=>{
+btn.addEventListener('submit',(e)=>{
 e.preventDefault();
 
 checkRequired(arrElement);
