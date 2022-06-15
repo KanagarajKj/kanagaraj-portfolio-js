@@ -8,7 +8,6 @@ const form = document.getElementById('form');
 const userName = document.getElementById('username');
 const email = document.getElementById('email');
 const messageBox = document.getElementById('message');
-const remainingChar = document.querySelector('small');
 const submitBtn = document.getElementById('submit_btn')
 
 btn.addEventListener('click', () => {
@@ -70,12 +69,5 @@ const checkEmail = function (input) {
   }
 };
 
-// TextArea
-const maxChar = 300;
-messageBox.addEventListener('input', () => {
-  const remaining = maxChar - messageBox.value.length;
-  remainingChar.textContent = `${remaining} characters remaining`;
-  let color = remaining < maxChar * 0.1 ? 'red' : null;
-  remainingChar.style.color = color;
-});
+
 
