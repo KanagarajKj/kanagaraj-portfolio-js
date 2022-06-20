@@ -573,6 +573,7 @@ padding: 1rem;
     right: 0;
     background-color: transparent;
     width: 100%;
+    height: 5rem;
    display: flex;
    justify-content: right;
   }
@@ -649,6 +650,10 @@ padding: 1rem;
   grid-template-columns: repeat(4,1fr);
 }
 
+.project ul li a {
+  cursor: pointer;
+}
+
 
 .contact_container {
   display: flex;
@@ -672,8 +677,6 @@ margin-bottom: 2rem;
   font-size: 2rem;
 }
 
-
-
 } 
 
 @media screen and (min-width:1440px){
@@ -693,6 +696,15 @@ margin-bottom: 2rem;
 .form {
   width: 30%;
   margin: auto;
+}
+
+.project .project_container li a{
+  cursor: pointer;
+}
+
+.project_btn a{
+  cursor: pointer;
+  z-index: 1;
 }
 
 
