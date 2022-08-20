@@ -232,20 +232,21 @@ font-size: 1rem;
 .about_me p{
 width: 90%;
 margin: auto;
-text-align: center;
+text-align: left;
 letter-spacing: 1px;
 padding: 0 20px;
 color: var(--paragraph);
+padding-right: 1rem;
 }
 
 .about_me h2 {
   text-align: center;
   color: var(--Bg-primary-color);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .my_skill h2{
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 
 }
 
@@ -260,7 +261,7 @@ text-align: center;
 
 .about_me .skills li img {
   border-radius: 10%;
-  width: 7rem;
+  width: 3rem;
 }
 
 .about_me .skills li {
@@ -625,6 +626,24 @@ padding: 1rem;
 
 .about_me p {
   width: 70%;
+}
+
+.skills li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skills li img {
+  width: 8rem;
+  height: auto;
+  display: block;
+}
+
+.skills li span {
+  display: block;
+  text-align: center;
 }
 
 .know_me {
